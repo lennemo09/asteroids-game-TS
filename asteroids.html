@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+        <style>
+            @import url(style.css);
+            #title {
+                color: white;
+                font-family: 'Abel', sans-serif;
+                font-size: 200%;
+            }
+            h2 {
+                color: white;
+                font-family: 'Abel', sans-serif;
+            }
+
+            body {
+                background-color: rgb(41, 41, 36);
+            }
+            p.highlight {
+                color: red;
+            }
+            svg {
+                background-color: rgb(41, 41, 36);
+                border: 1cm;
+                border-color: white;
+                display: inline-block;
+                width: 600px;
+            }
+
+            .gamecontainer {
+                position: relative;
+            }
+
+            .sliderstext {
+                position: absolute;
+                top: 0px;
+                left: 950px;
+                width: 300px;
+            }
+
+            .settingscontainer {
+                display: inline-block;
+            }
+            
+            .gameover {
+                position: absolute;
+                text-align: center; 
+                color: white;
+                font-family: 'Abel', sans-serif;
+                font-size: 400%;
+                top: 250px;
+                left: 175px;
+            }
+
+            .powerpickup {
+                position: absolute;
+                text-align: center; 
+                color: white;
+                font-family: 'Abel', sans-serif;
+                font-size: 400%;
+                top: 50px;
+                left: 125px;
+            }
+
+            h3 {
+                color: white;
+                font-family: 'Abel', sans-serif;
+                position: relative;
+                line-height: 1.15em;
+            }
+
+            a {
+            background-color: rgb(41, 41, 36);
+            color: white;
+            font-family: 'Abel', sans-serif;
+            font-size: 190%;
+            }
+
+
+        </style>
+        <script src="svgelement.js"></script>
+        <script src="observable.js"></script>
+        <script src="asteroids.js"></script>
+    </head>
+    <body>
+        <h1 id="title">func poorlyImplement(ASTEROIDS) { <br>return</h1>
+        <a href="./src/instructions.jpg">INSTRUCTIONS</a>
+        <br/>
+        <br/>
+        <h2 id="lives" style="display:inline">
+            Lives: 3
+        </h2>
+        <p style="display:inline">&emsp;&emsp;&emsp;&emsp;</p>
+        <h2 id="score" style="display:inline">
+            Score: 0
+        </h2>
+        <h2 id = "level">
+            Level 1   
+        </h2>
+        <div class="gamecontainer">
+                <svg id="canvas" width="600" height="600"> <rect class="rectangle" width="100%" height="100%" fill="none" stroke="white" stroke-width="1" /> </svg>
+                <div id ="gameover" class="gameover" ></div>
+                <div id ="powerpickup" class="powerpickup" ></div>
+                <svg id="settings" width="600" height="600"> <rect class="rectangle" width="100%" height="100%" fill="none" stroke="white" stroke-width="1" /> </svg>
+                <div class="sliderstext">
+                    <h3 id="thrustspeed">
+                        
+                    </h3>
+                    <h3 id="bulletspeed">
+                        
+                    </h3>
+                    <h3 id="firingspeed">
+                        
+                    </h3>
+                    <h3 id="asteroidsmaxcount">
+                        
+                    </h3>
+                    <h3 id="asteroidsmaxsize">
+                        
+                    </h3>
+                    <h3 id="asteroidsmaxspeed">
+                        
+                    </h3>
+                    <h3 id="frictionmultiplier">
+                       
+                    </h3>
+                    <h3 id="rotatespeed">
+                        
+                    </h3>
+
+                    <h3 id="enemymovespeed">
+                        
+                    </h3>
+                    <h3 id="enemyshootdelay">
+                        
+                    </h3>
+                    <h3 id="enemybulletspeed">
+                        
+                    </h3>
+      
+ 
+                </div>
+                
+        </div>       
+        <h1 id="title">}</h1>
+        
+    </body>
+</html>
